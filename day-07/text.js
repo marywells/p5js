@@ -4,11 +4,11 @@ let startAngle = 0;
 let distanceAngle = 360;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(800, 800);
   radius = min(width, height) / 3;
 
   textSize(radius / 4);
-  textFont('GeorgiaItalic');
+  textFont('Georgia');
 
   textAlign(CENTER, BASELINE);
 }
