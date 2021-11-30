@@ -5,7 +5,7 @@ function setup() {
 }
 
 function draw() {
-  const white = 'rgba(182, 190,180,0.5)';
+  background(190);
   translate(width / 2, height / 2);
 
   for (let i = 0; i < 900; i++) {
@@ -15,9 +15,9 @@ function draw() {
     a = random(1, 120);
     push();
     rotate(sin(frameCount + i) * 100);
-    stroke(0);
+    noStroke();
     fill(r, g, 255, a);
-    rect(i, i, i, i * 2, 100);
+    rect(i, i, i, i * 2, 200);
     pop();
   }
 }
